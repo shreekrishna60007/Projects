@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TuitionPro - the free fee manager for tutors. Track students, fees, reminders and reports in one place.">
+    <title>TuitionPro – Free Tuition Fee Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =====================================================
+     1. LANDING PAGE
+===================================================== -->
+<section id="landingView" class="view">
+    <header class="land-nav">
+        <a href="#" class="brand" data-go="landing">
+            <span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span>Tuition<b>Pro</b></span>
+        </a>
+        <nav class="land-links">
+            <a href="#features">Features</a>
+            <a href="#how">How it works</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <div class="land-actions">
+            <button class="btn btn-ghost" data-go="signin">Sign In</button>
+            <button class="btn btn-primary" data-go="signup">Get Started Free</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <span class="pill"><i class="fa-solid fa-circle-check"></i> 100% free for tutors</span>
+                <h1>Manage students and fees <span class="grad">without the paperwork.</span></h1>
+                <p>TuitionPro helps home tutors and coaching centres track every student, collect monthly fees, send WhatsApp reminders and see clear reports. No cost, no clutter.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" data-go="signup">Create Free Account <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn-outline btn-lg" data-go="signin">I already have an account</button>
+                </div>
+                <ul class="hero-points">
+                    <li><i class="fa-solid fa-check"></i> No credit card</li>
+                    <li><i class="fa-solid fa-check"></i> Works on phone &amp; laptop</li>
+                    <li><i class="fa-solid fa-check"></i> Export anytime</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="mock-card">
+                    <div class="mock-top">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mock-stats">
+                        <div><small>Collected</small><strong>₹48,500</strong></div>
+                        <div><small>Pending</small><strong>₹7,200</strong></div>
+                        <div><small>Students</small><strong>42</strong></div>
+                    </div>
+                    <div class="mock-bars">
+                        <i style="height:40%"></i><i style="height:62%"></i><i style="height:50%"></i>
+                        <i style="height:78%"></i><i style="height:66%"></i><i style="height:92%"></i>
+                    </div>
+                    <div class="mock-row"><span class="dot g"></span> Aarav Sharma <em>Paid</em></div>
+                    <div class="mock-row"><span class="dot y"></span> Sneha Patel <em class="warn">Pending</em></div>
+                    <div class="mock-row"><span class="dot g"></span> Rahul Verma <em>Paid</em></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="section-head">
+                <h2>Everything a tutor needs</h2>
+                <p>Simple tools that replace notebooks, spreadsheets and endless follow-up calls.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature"><div class="f-icon blue"><i class="fa-solid fa-users"></i></div><h3>Student Records</h3><p>Keep class, subject, parent contact, fee and notes for every student in one profile.</p></article>
+                <article class="feature"><div class="f-icon green"><i class="fa-solid fa-wallet"></i></div><h3>Fee Management</h3><p>Record full or partial payments by month, with UPI, cash or bank transfer.</p></article>
+                <article class="feature"><div class="f-icon wa"><i class="fa-brands fa-whatsapp"></i></div><h3>WhatsApp Reminders</h3><p>Send a ready-made reminder to parents in one tap using your own message template.</p></article>
+                <article class="feature"><div class="f-icon purple"><i class="fa-solid fa-chart-column"></i></div><h3>Reports &amp; Insights</h3><p>Monthly collection charts, payment methods, collection rate and defaulters list.</p></article>
+                <article class="feature"><div class="f-icon orange"><i class="fa-solid fa-receipt"></i></div><h3>Printable Receipts</h3><p>Generate a clean fee receipt for any payment and print or save it as PDF.</p></article>
+                <article class="feature"><div class="f-icon red"><i class="fa-solid fa-download"></i></div><h3>Backup &amp; Export</h3><p>Download students and payments as CSV, or back up everything as a JSON file.</p></article>
+            </div>
+        </section>
+
+        <section class="section alt" id="how">
+            <div class="section-head">
+                <h2>Up and running in 3 steps</h2>
+            </div>
+            <div class="steps">
+                <div class="step"><span>1</span><h3>Create your account</h3><p>Sign up with your email and set your tuition centre name.</p></div>
+                <div class="step"><span>2</span><h3>Add your students</h3><p>Enter each student with the monthly fee and parent phone number.</p></div>
+                <div class="step"><span>3</span><h3>Track &amp; collect</h3><p>Record payments, remind parents and review reports any time.</p></div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="section-head"><h2>Frequently asked questions</h2></div>
+            <div class="faq">
+                <details><summary>Is TuitionPro really free?</summary><p>Yes. All features are free to use.</p></details>
+                <details><summary>Where is my data stored?</summary><p>In this version, data is stored securely in your own browser. A cloud database (Supabase) can be connected later so your data syncs across devices.</p></details>
+                <details><summary>Can I use it on my phone?</summary><p>Yes, the design adapts to phones, tablets and computers.</p></details>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <h2>Ready to simplify your tuition fees?</h2>
+            <p>Create your free account in under a minute.</p>
+            <button class="btn btn-white btn-lg" data-go="signup">Get Started Free</button>
+        </section>
+    </main>
+
+    <footer class="land-footer">
+        <div class="brand"><span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span><span>Tuition<b>Pro</b></span></div>
+        <p>© <span id="footYear">2026</span> TuitionPro. Built for tutors.</p>
+    </footer>
+</section>
+
+
+<!-- =====================================================
+     2. AUTH (SIGN IN / SIGN UP)
+===================================================== -->
+<section id="authView" class="view" hidden>
+    <div class="auth-wrap">
+        <aside class="auth-side">
+            <a href="#" class="brand light" data-go="landing">
+                <span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>Tuition<b>Pro</b></span>
+            </a>
+            <div>
+                <h2>Fees tracked.<br>Parents reminded.<br>Peace of mind.</h2>
+                <p>Join tutors who manage their whole tuition business from one simple dashboard.</p>
+            </div>
+            <small>Free forever for tutors.</small>
+        </aside>
+
+        <div class="auth-main">
+            <div class="auth-card">
+                <div class="auth-tabs" role="tablist">
+                    <button type="button" class="auth-tab active" data-tab="signin" role="tab">Sign In</button>
+                    <button type="button" class="auth-tab" data-tab="signup" role="tab">Create Account</button>
+                </div>
+
+                <!-- Sign in -->
+                <form id="signinForm" class="auth-form" novalidate>
+                    <h1>Welcome back</h1>
+                    <p class="muted">Sign in to open your dashboard.</p>
+
+                    <div class="field">
+                        <label for="siEmail">Email address</label>
+                        <input type="email" id="siEmail" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="siPassword">Password</label>
+                        <div class="pw-wrap">
+                            <input type="password" id="siPassword" autocomplete="current-password" placeholder="Your password" required>
+                            <button type="button" class="pw-toggle" data-toggle-pw="siPassword" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    <p class="auth-switch">
+                        <a href="#" id="forgotPasswordLink">Forgot password?</a>
+                    </p>
+                    <p class="auth-msg" id="siMsg" role="status" aria-live="polite"></p>
+                    <p class="auth-switch">New here? <a href="#" data-tab-link="signup">Create a free account</a></p>
+                </form>
+
+                <!-- Sign up -->
+                <form id="signupForm" class="auth-form" hidden novalidate>
+                    <h1>Create your account</h1>
+                    <p class="muted">Free, quick and no credit card needed.</p>
+
+                    <div class="field">
+                        <label for="suName">Your name</label>
+                        <input type="text" id="suName" autocomplete="name" placeholder="e.g. Ravi Kumar" required>
+                    </div>
+                    <div class="field">
+                        <label for="suTuition">Tuition centre name</label>
+                        <input type="text" id="suTuition" placeholder="e.g. Bright Minds Tuition" required>
+                    </div>
+                    <div class="field">
+                        <label for="suEmail">Email address</label>
+                        <input type="email" id="suEmail" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="suPassword">Password</label>
+                        <div class="pw-wrap">
+                            <input type="password" id="suPassword" autocomplete="new-password" placeholder="At least 6 characters" minlength="6" required>
+                            <button type="button" class="pw-toggle" data-toggle-pw="suPassword" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="suConfirm">Confirm password</label>
+                        <input type="password" id="suConfirm" autocomplete="new-password" placeholder="Re-enter password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    <p class="auth-msg" id="suMsg" role="status" aria-live="polite"></p>
+                    <p class="auth-switch">Already registered? <a href="#" data-tab-link="signin">Sign in</a></p>
+                </form>
+
+                <button type="button" class="back-link" data-go="landing"><i class="fa-solid fa-arrow-left"></i> Back to home</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Password Reset Form -->
+<section id="resetPasswordView" class="view" hidden>
+    <div class="auth-layout">
+        <div class="auth-card">
+            <form id="resetPasswordForm" class="auth-form" novalidate>
+                <h1>Set a new password</h1>
+                <p class="muted">Choose a new password for your TuitionPro account.</p>
+
+                <div class="field">
+                    <label for="newPassword">New password</label>
+                    <input type="password" id="newPassword"
+                        autocomplete="new-password" minlength="6"
+                        placeholder="At least 6 characters" required>
+                </div>
+
+                <div class="field">
+                    <label for="confirmNewPassword">Confirm new password</label>
+                    <input type="password" id="confirmNewPassword"
+                        autocomplete="new-password" minlength="6"
+                        placeholder="Enter the password again" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    Update Password
+                </button>
+
+                <p class="auth-msg" id="resetPasswordMsg"
+                    role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =====================================================
+     3. APPLICATION (DASHBOARD)
+===================================================== -->
+<div id="appView" class="view app" hidden>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <a href="#" class="brand light sidebar-brand">
+            <span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span>Tuition<b>Pro</b></span>
+        </a>
+
+        <nav class="side-nav" aria-label="Main">
+            <button class="nav-btn active" data-page="dashboard"><i class="fa-solid fa-house"></i><span>Dashboard</span></button>
+            <button class="nav-btn" data-page="students"><i class="fa-solid fa-users"></i><span>Students</span></button>
+            <button class="nav-btn" data-page="fees"><i class="fa-solid fa-wallet"></i><span>Fee Management</span></button>
+            <button class="nav-btn" data-page="reminders"><i class="fa-brands fa-whatsapp"></i><span>Reminders</span><em class="nav-badge" id="navPendingBadge" hidden>0</em></button>
+            <button class="nav-btn" data-page="reports"><i class="fa-solid fa-chart-column"></i><span>Reports</span></button>
+            <button class="nav-btn" data-page="settings"><i class="fa-solid fa-gear"></i><span>Settings</span></button>
+        </nav>
+
+        <button class="nav-btn logout" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i><span>Log out</span></button>
+    </aside>
+
+    <div class="app-main">
+        <header class="topbar">
+            <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+            <div class="topbar-title">
+                <h1 id="pageTitle">Dashboard</h1>
+                <p id="pageSubtitle"></p>
+            </div>
+
+            <div class="topbar-right">
+                <button class="icon-btn bell" id="bellBtn" aria-label="Pending fees" title="Pending fees">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="bell-badge" id="bellBadge" hidden>0</span>
+                </button>
+                <div class="profile-chip" id="profileChip">
+                    <div class="avatar" id="topAvatar">T</div>
+                    <div class="profile-text">
+                        <strong id="topName">Tutor</strong>
+                        <small id="topTuition">Tuition</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page" id="pageRoot"></main>
+
+        <footer class="app-footer">© <span id="appYear">2026</span> TuitionPro</footer>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-head">
+            <h3 id="modalTitle">Title</h3>
+            <button class="icon-btn" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Toasts -->
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
